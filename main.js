@@ -171,20 +171,20 @@ const videoIframe = document.getElementById('videoIframe');
 // Open modal and start autoplay
 playIconWrapper.addEventListener('click', () => {
     videoModal.classList.remove('hidden'); // Show modal
-    videoIframe.src += "&autoplay=1"; // Start autoplay
+    videoIframe.src = videoIframe.src + "?autoplay=1"; // Add autoplay to the video URL
 });
 
 // Close modal and stop autoplay
 closeModal.addEventListener('click', () => {
     videoModal.classList.add('hidden'); // Hide modal
-    videoIframe.src = videoIframe.src.replace("&autoplay=1", ""); // Stop autoplay
+    videoIframe.src = videoIframe.src.replace("?autoplay=1", ""); // Remove autoplay from the URL to stop the video
 });
 
 // Close modal when clicking outside the modal content
 videoModal.addEventListener('click', (e) => {
     if (e.target === videoModal) {
         videoModal.classList.add('hidden'); // Hide modal
-        videoIframe.src = videoIframe.src.replace("&autoplay=1", ""); // Stop autoplay
+        videoIframe.src = videoIframe.src.replace("?autoplay=1", ""); // Remove autoplay to stop the video
     }
 });
 

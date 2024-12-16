@@ -106,6 +106,82 @@
     @apply border-gray-300 border-t;
   }
 
+  /* Wave animation styles */
+.wave {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #3b82f6; /* Blue color */
+    opacity: 0.7;
+    animation: waveAnimation 2.5s ease-in-out infinite;
+}
+
+.wave1 {
+    width: 36px; /* Default size */
+    height: 36px;
+    animation-delay: 0.1s;
+}
+
+.wave2 {
+    width: 56px; /* Default size */
+    height: 56px;
+    animation-delay: 0.3s;
+    opacity: 0.5;
+}
+
+.wave3 {
+    width: 76px; /* Default size */
+    height: 76px;
+    animation-delay: 0.1s;
+    opacity: 0.3;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .wave1 {
+        width: 28px; /* Smaller size on tablets and phones */
+        height: 28px;
+    }
+
+    .wave2 {
+        width: 42px;
+        height: 42px;
+    }
+
+    .wave3 {
+        width: 66px;
+        height: 66px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wave1 {
+        width: 30px; /* Even smaller on mobile */
+        height: 30px;
+    }
+
+    .wave2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .wave3 {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+
 @layer components {
     .banner-btn {
         display: inline-block;
