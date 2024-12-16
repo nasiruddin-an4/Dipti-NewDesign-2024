@@ -1,0 +1,786 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar Start  -->
+  <section class="bg-light-sky relative overflow-hidden">
+    <nav
+        class="lg:absolute w-full fixed bg-white lg:bg-transparent z-999999 lg:z-auto lg:pb-0 shadow-md lg:shadow-none">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 ">
+            <div class="flex items-center py-2 lg:py-5">
+                <!-- Logo -->
+                <div class="lg:w-15p w-56">
+                    <a href="./">
+                        <img src="./images/dipti-logo.png" alt="dipti-logo" class="inline-block w-70" />
+                    </a>
+                </div>
+
+                <!-- Desktop Menu - Centered -->
+                <div class="hidden md:flex flex-1 justify-center z-999999">
+                    <a href="#"
+                        class="relative text-gray-600 px-3 py-1 rounded-md flex items-center justify-center">
+                        About Us
+                    </a>
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 group-hover:text-gray-900 px-3 py-2 rounded-md flex items-center cursor-pointer">
+                            Courses <i
+                                class="ri-arrow-down-s-line ml-2 transform transition-transform duration-200 group-hover:rotate-180"></i>
+                        </div>
+
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-calendar-line mr-2"></i>
+                                    Upcoming Events
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-archive-line mr-2"></i>
+                                    Past Events
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 group-hover:text-gray-900 px-3 py-2 rounded-md flex items-center cursor-pointer">
+                            Training <i
+                                class="ri-arrow-down-s-line ml-2 transform transition-transform duration-200 group-hover:rotate-180"></i>
+                        </div>
+
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-book-line mr-2"></i>
+                                    Courses
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-graduation-cap-line mr-2"></i>
+                                    Programs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 group-hover:text-gray-900 px-3 py-2 rounded-md flex items-center cursor-pointer">
+                            Academic <i
+                                class="ri-arrow-down-s-line ml-2 transform transition-transform duration-200 group-hover:rotate-180"></i>
+                        </div>
+
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-building-line mr-2"></i>
+                                    Campus Life
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-group-line mr-2"></i>
+                                    Community
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 group-hover:text-gray-900 px-3 py-2 rounded-md flex items-center cursor-pointer">
+                            Successs Stories <i
+                                class="ri-arrow-down-s-line ml-2 transform transition-transform duration-200 group-hover:rotate-180"></i>
+                        </div>
+
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-image-line mr-2"></i>
+                                    Gallery
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+                                    <i class="ri-video-line mr-2"></i>
+                                    Videos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Online Admission -->
+                <div class="hidden md:block relative z-999999">
+                    <a href="#"
+                        class="font-pop text-base font-normal text-white flex items-center gap-2.5 hover:text-tertiary-orange transition-all duration-150 z-10">
+                        <span class="bg-white w-30 h-30 rounded-full flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.258" height="17.285"
+                                viewBox="0 0 19.258 17.285">
+                                <path id="Path_3" data-name="Path 3"
+                                    d="M15.129,18.143l9.129-5.072L15.129,8,6,13.072Zm0,0,6.248-3.469a12.254,12.254,0,0,1,.675,6.568,12.138,12.138,0,0,0-6.923,3.043,12.138,12.138,0,0,0-6.923-3.043,12.254,12.254,0,0,1,.675-6.568Zm-4.057,6.086V16.622l4.057-2.252"
+                                    transform="translate(-5.5 -7.5)" fill="none" stroke="#0d1128"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                            </svg>
+                        </span>
+                        Online Admission</a>
+                </div>
+
+                <!-- Mobile Search and Menu -->
+                <div class="md:hidden flex flex-1 items-center justify-end space-x-4">
+                    <!-- Mobile Search Icon and Collapsible Search Box -->
+                    <div class="relative">
+                        <button id="mobile-search-toggle"
+                            class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                            <i class="ri-search-line text-xl"></i>
+                        </button>
+                        <!-- Mobile Search Box (Hidden by default) -->
+                        <div id="mobile-search-box" class="absolute right-0 top-10 w-60 hidden">
+                            <input type="text" placeholder="Search..."
+                                class="w-full px-4 py-1 text-gray-600 bg-white rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 shadow-lg">
+                        </div>
+                    </div>
+                    <button id="mobile-menu-toggle" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <span id="mobile-menu-icon">
+                            <i class="ri-menu-line text-2xl"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu - Slides from Right -->
+            <div id="mobile-menu"
+                class="md:hidden w-4/5 fixed inset-y-0 right-0 bg-white shadow-lg transform transition-transform duration-300 ease-in-out translate-x-full z-50">
+                <div class="px-4 pt-4 pb-3 space-y-1">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                        <button id="mobile-menu-close" class="text-gray-600 hover:text-gray-900">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md flex items-center">
+                        About Us
+                    </a>
+
+                    <!-- Courses -->
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center">Courses
+                            </div>
+                            <svg class="transform transition-transform duration-200" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="mobile-dropdown hidden">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-calendar-line mr-2"></i>
+                                Upcoming Events
+                            </a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-archive-line mr-2"></i>
+                                Past Events
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Training -->
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center">
+                                Training
+                            </div>
+                            <svg class="transform transition-transform duration-200" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="mobile-dropdown hidden">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-book-line mr-2"></i>
+                                Courses
+                            </a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-graduation-cap-line mr-2"></i>
+                                Programs
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Academic -->
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center">
+                                Academic
+                            </div>
+                            <svg class="transform transition-transform duration-200" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="mobile-dropdown hidden">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-building-line mr-2"></i>
+                                Campus Life
+                            </a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-group-line mr-2"></i>
+                                Community
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Successs Stories -->
+                    <div class="relative group">
+                        <div
+                            class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center">
+                                Successs Stories
+                            </div>
+                            <svg class="transform transition-transform duration-200" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="mobile-dropdown hidden">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-image-line mr-2"></i>
+                                Gallery
+                            </a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ml-4 flex items-center">
+                                <i class="ri-video-line mr-2"></i>
+                                Videos
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="text-gray-600 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md flex items-center">
+                        Online Admission
+                    </a>
+                </div>
+            </div>
+
+            <!-- Overlay -->
+            <div id="mobile-menu-overlay"
+                class="fixed inset-0 bg-gray-200 opacity-50 invisible transition-all duration-300 ease-in-out z-40">
+            </div>
+        </div>
+    </nav>
+    <!-- ----------------- Banner Part Start ------------------ -->
+    <div>
+        <!-- ----------------- Banner Part Start ------------------ -->
+        <div class="max-w-6xl mx-auto h-full flex px-4 md:px-0">
+            <div class="lg:w-1/2 w-full">
+                <h1
+                    class="lg:mt-194 mt-28  lg:text-6xl text-4xl font-bold text-primary-dark-blue lg:w-424 w-full relative capitalize">
+                    Boost up your career
+                    <span
+                        class="w-56 h-56 bg-white rounded-full flex justify-center items-center absolute lg:top-2 -top-4 lg:right-20 right-10">
+                        <img src="./images/icons/rocket.png" alt="rocket" class="w-30 h-auto" />
+                    </span>
+                </h1>
+                <p class="font-pop text-sm font-light text-gray-1 lg:w-424 w-full lg:text-left mt-25 leading-6">
+                    DIPTI is working on this concerned field to help to the educated but
+                    unemployed; also to help to the professionals to develop their
+                    professionalism and establish their career in IT & Animation sector
+                    since 2004.
+                </p>
+                <div class="mt-65 flex items-center gap-21 pb-20">
+                    <a href="#" class="banner-btn">Courses</a>
+                    <a href="#"
+                        class="flex items-center gap-3.5 font-pop text-sm font-normal text-black hover:text-tertiary-orange transition-all duration-150 group">
+                        <span
+                            class="w-43 h-43 rounded-full bg-secondary-dark-blue flex justify-center items-center text-white">
+                            <svg id="arrow_right" data-name="arrow right" xmlns="http://www.w3.org/2000/svg"
+                                width="21.348" height="21.348" viewBox="0 0 21.348 21.348"
+                                class="group-hover:translate-x-1 transition-all duration-300">
+                                <path id="Path_5" data-name="Path 5"
+                                    d="M15.785,10l6.227,6.227m0,0-6.227,6.227m6.227-6.227H6"
+                                    transform="translate(-3.331 -5.552)" fill="none" stroke="#fff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                <path id="Path_6" data-name="Path 6" d="M0,0H21.348V21.348H0Z" fill="none" />
+                            </svg>
+                        </span>
+                        Enroll Now</a>
+                </div>
+            </div>
+            <div class="w-1/2 relative banner-parallax hidden md:block">
+                <div class="max-w-347 h-full flex items-end relative z-99999 lg:ml-6 xl:ml-98 md:ml-20">
+                    <img src="./images/banner-img.png" alt="banner-img"
+                        class="block w-full max-h-548 z-10 absolute -left-5" />
+                </div>
+
+                <div class="absolute top-24p right-6 md:block z-9999">
+                    <div class="bg-white rounded-23 py-4 px-18 relative z-50 text-center">
+                        <h6 class="font-inter text-22 font-bold text-gray-3">10000+</h6>
+                        <p class="font-pop text-xs tracking-wider text-gray-4">
+                            Active Students
+                        </p>
+                        <img src="./images/dist-students.png" alt="dipti-students"
+                            class="w-137 h-auto mt-3 mx-auto" />
+                    </div>
+                    <div class="w-43 h-43 rounded-full bg-blue-2 absolute -top-3.5 -right-5 z-0"></div>
+                    <div class="w-6 h-6 rounded-full bg-tertiary-orange absolute -bottom-1.5 -left-1.5 z-0"></div>
+                </div>
+
+                <div class="absolute top-65p -right-10 md:hidden lg:block">
+                    <div
+                        class="bg-white rounded-23 py-5 px-18 relative z-99999 text-center flex flex-col items-center">
+                        <h6 class="font-inter text-22 font-bold text-gray-3 flex items-center gap-2">
+                            <span class="w-26 h-26 rounded-full bg-light-orange flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.074" height="12.339"
+                                    viewBox="0 0 15.074 12.339">
+                                    <path id="Path_7" data-name="Path 7"
+                                        d="M13.037,10.981V21.146m0-10.165A6.394,6.394,0,0,0,9.519,10,6.394,6.394,0,0,0,6,10.981V21.146a6.394,6.394,0,0,1,3.519-.981,6.394,6.394,0,0,1,3.519.981m0-10.165A6.394,6.394,0,0,1,16.556,10a6.394,6.394,0,0,1,3.519.981V21.146a6.394,6.394,0,0,0-3.519-.981,6.394,6.394,0,0,0-3.519.981"
+                                        transform="translate(-5.5 -9.5)" fill="none" stroke="#ee6a23"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                </svg> </span>35+
+                        </h6>
+                        <p class="font-pop text-xs tracking-wider text-gray-4 mt-13">
+                            Treanding Courses
+                        </p>
+                    </div>
+                    <div class="w-6 h-6 rounded-full bg-dark-yellow absolute -bottom-1.5 -right-1.5 z-9999"></div>
+                </div>
+
+                <div class="absolute w-11 h-11 rounded-full bg-light-lemon top-60p left-85p z-999999">
+                </div>
+
+                <div class="absolute top-49p -left-2 z-99999 ">
+                    <div
+                        class="bg-white rounded-23 py-5 px-18 relative z-50 text-center flex flex-col items-center">
+                        <h6 class="font-inter text-22 font-bold text-gray-3 flex items-center gap-2">
+                            <span class="w-26 h-26 rounded-full bg-lighter-sky flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13.243" height="12.77"
+                                    viewBox="0 0 13.243 12.77">
+                                    <path id="Path_9" data-name="Path 9"
+                                        d="M9.4,14.122v-.68m2.721.68V12.081m2.721,2.041v-3.4M9.4,19.563l2.721-2.721,2.721,2.721M6,8H18.243M6.68,8H17.563v8.162a.682.682,0,0,1-.68.68H7.36a.682.682,0,0,1-.68-.68Z"
+                                        transform="translate(-5.5 -7.5)" fill="none" stroke="#1294df"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                </svg> </span>100+
+                        </h6>
+                        <p class="font-pop text-xs tracking-wider text-gray-4 mt-13">
+                            Top Class Mentors
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------- Banner Part End ------------------ -->
+
+        <div class="lg:w-2/4 h-full bg-primary-dark-blue absolute top-0 -right-52  rounded-tl-[50%]"></div>
+        <div class="lg:w-2/4 h-full bg-primary-dark-blue absolute -top-10 -right-52  rounded-tl-[50%]"></div>
+    </div>
+    <!-- ----------------- Banner Part End ------------------ -->
+</section>
+<!-- Navbar Start  End -->
+
+<!-- Course Categories  -->
+<section class="mt-20">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header Section -->
+        <div class="space-y-4">
+            <h2 class="text-2xl lg:text-3xl font-bold text-center text-primary-dark-blue">Course Categories ✨</h2>
+
+            <!-- Category Carousel -->
+            <div class="relative">
+                <!-- Left Arrow -->
+                <button onclick="scrollCategories('left')"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <!-- Category Buttons -->
+                <div id="categoryContainer"
+                    class="category-scroll flex gap-4 overflow-x-auto py-1 text-left w-full"></div>
+
+                <!-- Right Arrow -->
+                <button onclick="scrollCategories('right')"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Course Grid -->
+        <div id="courseGrid"
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-8 px-2 lg:gap-4 lg:px-0"></div>
+
+        <!-- See All Button -->
+        <div class="mt-8 flex justify-center">
+            <a href="all-courses.html"
+                class="w-1/2 lg:w-1/3 lg:px-4 py-1 lg:py-2 lg:border rounded-md text-sm text-white lg:text-black text-center bg-black lg:bg-gray-100 hover:bg-orange-200 duration-300 flex items-center justify-center gap-2 group">
+                <span class="text-sm">See All Course</span>
+                <i class="ri-arrow-right-line transition-all duration-300 transform group-hover:translate-x-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Course Categories END -->
+
+    <!-- Offering Trending Courses -->
+    <section>
+        <div class="max-w-6xl mx-auto text-center px-3 lg:px-0 mt-20">
+            <h2 class="text-2xl font-bold text-primary-dark-blue">We Are Offering</h2>
+            <div class="flex justify-center">
+                <p class="text-sm pt-2 w-full md:w-2/3 lg:w-4/5">We are proud to offer 35+ trending courses designed to meet
+                    the needs of today’s ever-evolving industries.</p>
+            </div>
+            <div id="offerContainer" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 shadow-md mt-5 bg-white">
+                <!-- Offer cards will be injected here -->
+            </div>
+        </div>
+    </section>
+    <!-- Offering Trending courses END -->
+
+        <!-- Get certified from globally -->
+        <section class="mt-20">
+            <div class="max-w-6xl mx-auto my-10 bg-gray-100 rounded-md flex flex-wrap items-center">
+                <!-- Left Side Content -->
+                <div class="w-full md:w-1/2 p-5">
+                    <h2 class="text-2xl font-bold text-primary-dark-blue">
+                        <span class="text-orange-700">Get Certified</span> from globally and locally renown affiliations
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        Join our Corporate Skills Training Program, get training from the country's best industry experts
+                        and reinvent your team.
+                    </p>
+                    <a href="#" class="banner-btn mt-5">Join Today</a>
+    
+                    <!-- Clients Section -->
+                    <div class="mt-3">
+                        <h3 class="text-lg font-bold text-gray-700">Some of our clients</h3>
+                        <div class="flex flex-wrap gap-5 mt-2">
+                            <img src="./images/affiliation/AWS.png" alt="Client 1"
+                                class="h-8 filter grayscale hover:grayscale-0 transition duration-300">
+                            <img src="./images/affiliation/Bteb.png" alt="Client 2"
+                                class="h-8 filter grayscale hover:grayscale-0 transition duration-300">
+                            <img src="./images/affiliation/cdc.png" alt="Client 3"
+                                class="h-8 filter grayscale hover:grayscale-0 transition duration-300">
+                            <img src="./images/affiliation/csc LOGO.png" alt="Client 4"
+                                class="h-8 filter grayscale hover:grayscale-0 transition duration-300">
+                            <img src="./images/affiliation/goedu.png" alt="Client 5"
+                                class="h-8 filter grayscale hover:grayscale-0 transition duration-300">
+                            <img src="./images/affiliation/hrdi.png" alt="Client 6"
+                                class="h-8 filter grayscale hover:grayscale-0 transition duration-300">
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+                <!-- Right Side Image -->
+                <div class="w-full md:w-1/2 p-5">
+                    <img src="./images/campus-2.png" alt="Team Training"
+                        class="rounded-lg w-full h-[300px] object-cover">
+                </div>
+            </div>
+    
+    
+    
+        </section>
+        <!-- Get certified from globally END -->
+
+            <!-- Client Logo Marquee Section -->
+    <div class="max-w-6xl mx-auto mt-20">
+        <h2 class="text-3xl font-bold text-center mb-8 text-primary-dark-blue">Our Trusted Partners & Corporate Clients
+        </h2>
+
+        <div class="marquee">
+            <div id="marqueeContent" class="marquee-content">
+                <!-- Logos will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <!-- Client Logo Marquee Section End-->
+
+        <!-- Counter Section -->
+        <section class="mt-20 bg-gray-100 py-10 px-4 lg:px-0">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-primary-dark-blue text-center">Our Achievements</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-8">
+    
+                    <!-- Counter Item 1 -->
+                    <div class="bg-amber-200 p-5 rounded-md">
+                        <h3 class="text-4xl font-bold" id="counter1">
+                            0 <i class="ri-add-line"></i>
+                        </h3>
+                        <p class="mt-2">Happy Clients</p>
+                    </div>
+    
+                    <!-- Counter Item 2 -->
+                    <div class="bg-sky-200 p-5 rounded-md">
+                        <h3 class="text-4xl font-bold" id="counter2">
+                            0 <i class="ri-add-line"></i>
+                        </h3>
+                        <p class="mt-2">Projects Completed</p>
+                    </div>
+    
+                    <!-- Counter Item 3 -->
+                    <div class="bg-orange-200 p-5 rounded-md">
+                        <h3 class="text-4xl font-bold" id="counter3">
+                            0 <i class="ri-add-line"></i>
+                        </h3>
+                        <p class=" mt-2">Cups of Coffee</p>
+                    </div>
+    
+                    <!-- Counter Item 4 -->
+                    <div class="bg-indigo-200 p-5 rounded-md">
+                        <h3 class="text-4xl font-bold" id="counter4">
+                            0 <i class="ri-add-line"></i>
+                        </h3>
+                        <p class="mt-2">Awards Won</p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- Counter Section END -->
+
+            <!-- Testimonials Section  -->
+    <section class="mt-20 px-4 lg:px-0">
+        <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:!gap-10">
+            <div class=" flex flex-col items-center gap-4">
+                <h2 class="text-primary-dark-blue text-3xl lg:text-4xl font-bold text-center">What Students Says About Us </h2>
+                <p class="text-body-paragraph text-gray-600 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ratione, totam nobis cumque beatae doloremque sint iusto, eaque magnam ut consequatur obcaecati possimus sapiente? Cumque iure optio harum repudiandae quo?</p>
+            </div>
+            <div class=" w-full flex lg:!flex-row flex-col justify-center gap-3">
+                <div
+                    class="flex flex-col gap-3 justify-start w-full xl:!min-w-[276px] xl:!w-[276px] lg:!min-w-[218px] lg:!w-[218px]">
+                    <div
+                        class=" w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                        <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "DIPTI is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                        <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <div
+                                    class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                    <div class="  rounded-full  h-8 w-8 relative overflow-hidden pt-2"><img
+                                            class="rounded-full aspect-square object-cover w-full "
+                                            src="./images/What student says about us/What student says 2.webp">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                    </p>
+                                    <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                </div>
+                            </div>
+                            <div class=" w-8 h-8 min-w-8"><img
+                                    src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                        <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "DIPTI is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                        <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <div
+                                    class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                    <div class="  rounded-full  h-8 w-8 relative overflow-hidden pt-2"><img
+                                            class="rounded-full aspect-square object-cover w-full "
+                                            src="./images/What student says about us/What student says 2.webp">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                    </p>
+                                    <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                </div>
+                            </div>
+                            <div class=" w-8 h-8 min-w-8"><img
+                                    src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 justify-start w-full grow">
+                    <div
+                        class="w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                        <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "dist is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                        <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                            <div class="flex flex-wrap items-center gap-2 pt-2">
+                                <div
+                                    class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                    <div class="  rounded-full  h-8 w-8 relative overflow-hidden"><img
+                                            class="rounded-full aspect-square object-cover w-full "
+                                            src="./images/What student says about us/What student says 2.webp">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                    </p>
+                                    <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                </div>
+                            </div>
+                            <div class=" w-8 h-8 min-w-8"><img
+                                    src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between items-start gap-3 lg:!flex-row">
+                        <div class=" w-full flex flex-col justify-between items-start gap-3 xl:!w-1/2">
+                            <div
+                                class="w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                                <p class="text-sm text-gray-600 text-justify">Even though I come from a non-CS background, I felt that understanding data science would help me advance in my profession. In order to do so, I enrolled in an Ostad Data Science course. I believed it would be tough for me to understand without prior knowledge, but after taking the Ostad Data course, I learned that it is simple to crack and that they made it even easier.</p>
+                                <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                                    <div class="flex flex-wrap items-center gap-2 pt-2">
+                                        <div
+                                            class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                            <div class="  rounded-full  h-8 w-8 relative overflow-hidden"><img
+                                                    class="rounded-full aspect-square object-cover w-full "
+                                                    src="./images/What student says about us/What student says 2.webp">
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                            </p>
+                                            <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                        </div>
+                                    </div>
+                                    <div class=" w-8 h-8 min-w-8"><img
+                                            src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" w-full flex flex-col justify-between items-start gap-3 xl:!w-1/2">
+                            <div
+                                class="w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                                <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "DIPTI is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                                    <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                                        <div class="flex flex-wrap items-center gap-2 pt-2">
+                                            <div
+                                                class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                                <div class="  rounded-full  h-8 w-8 relative overflow-hidden"><img
+                                                        class="rounded-full aspect-square object-cover w-full "
+                                                        src="./images/What student says about us/What student says 2.webp">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                                </p>
+                                                <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                            </div>
+                                        </div>
+                                        <div class=" w-8 h-8 min-w-8"><img
+                                                src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div
+                                class=" w-full flex flex-col items-start p-3 gap-2 rounded-lg border !border-ostad-black-overlay bg-white">
+                                <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "DIPTI is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                                    <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                                        <div class="flex flex-wrap items-center gap-2 pt-2">
+                                            <div
+                                                class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                                <div class="  rounded-full  h-8 w-8 relative overflow-hidden"><img
+                                                        class="rounded-full aspect-square object-cover w-full "
+                                                        src="./images/What student says about us/What student says 2.webp">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                                </p>
+                                                <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                            </div>
+                                        </div>
+                                        <div class=" w-8 h-8 min-w-8"><img
+                                                src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 justify-start w-full xl:!min-w-[276px] xl:!w-[276px] lg:!min-w-[218px] lg:!w-[218px]">
+                    <div
+                        class=" w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                        <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "DIPTI is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                            <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                                <div class="flex flex-wrap items-center gap-2 pt-2">
+                                    <div
+                                        class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                        <div class="  rounded-full  h-8 w-8 relative overflow-hidden"><img
+                                                class="rounded-full aspect-square object-cover w-full "
+                                                src="./images/What student says about us/What student says 2.webp">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                        </p>
+                                        <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                    </div>
+                                </div>
+                                <div class=" w-8 h-8 min-w-8"><img
+                                        src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                                </div>
+                            </div>
+                    </div>
+                    <div
+                        class="w-full flex flex-col items-start p-3 gap-2 rounded-lg border border-gray-300 bg-white">
+                        <p class="text-sm text-gray-600 text-justify">One and only training institute for learning animation "DIPTI is a one and only training institute for animation, it has qualified trainer and well equipped Multimedia Computer Lab. We learned Animation and Motion Graphics with Video Editing from Arif Sir." </p>
+                            <div class="flex justify-between items-center gap-2 w-full horizontal-line">
+                                <div class="flex flex-wrap items-center gap-2 pt-2">
+                                    <div
+                                        class="flex items-center justify-center min-w-10 max-w-10 h-10 object-cover rounded-full">
+                                        <div class="  rounded-full  h-8 w-8 relative overflow-hidden"><img
+                                                class="rounded-full aspect-square object-cover w-full "
+                                                src="./images/What student says about us/What student says 2.webp">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class=" text-sm text-gray-600 whitespace-nowrap">Faisal Azam Siddiqui
+                                        </p>
+                                        <p class=" text-sm text-gray-600">Animation and Motion Graphics</p>
+                                    </div>
+                                </div>
+                                <div class=" w-8 h-8 min-w-8"><img
+                                        src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section  END-->
+
+
+  <script src="main.js"></script>
+  <script src="courseCard.js"></script>
+  <script src="courseData.js"></script>
+</body>
+</html>

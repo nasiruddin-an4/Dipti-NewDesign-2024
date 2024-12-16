@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    font-family: "Inter", sans-serif;
+}
+.category-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .category-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+  }
+  .marquee-content {
+    display: flex;
+    animation: marquee 120s linear infinite;
+  }
+  /*.marquee-content:hover {
+    animation-play-state: paused;
+  }
+  */
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* Custom 3-wave animation */
+  .wave {
+    position: absolute;
+    width: 80px; /* Default size for larger screens */
+    height: 80px; /* Default size for larger screens */
+    border: 20px solid #3b82f6; /* Tailwind's blue-500 color */
+    border-radius: 50%;
+    animation: pulse-wave 1.5s infinite ease-out;
+  }
+  
+  .wave:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .wave:nth-child(3) {
+    animation-delay: 5s;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) { /* For screens smaller than 768px */
+    .wave {
+      width: 50px; /* Smaller size for waves on mobile */
+      height: 50px;
+      border: 10px solid #3b82f6; /* Thinner border for mobile */
+    }
+  }
+  
+  @keyframes pulse-wave {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (6*300px)));
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container .carousel-items {
+      animation: carouselAnim 60s infinite alternate linear;
+    }
+    @keyframes carouselAnim {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(calc(-100% + (5*300px)));
+      }
+    }
+  }
+  
+  .carousel-focus:hover {
+    transition: all 0.8s;
+    transform: scale(1.1);
+  }
+  
+  
+  
+  .horizontal-line {
+    @apply border-gray-300 border-t;
+  }
+
+@layer components {
+    .banner-btn {
+        display: inline-block;
+        padding: 12px 27px;
+        border-radius: 22px;
+        text-transform: capitalize;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        color: #fff;
+        background-color: #ee6a23;
+        text-decoration: none;
+        -webkit-box-shadow: 2px 3px 0px #0d1128;
+        -moz-box-shadow: 2px 3px 0px #0d1128;
+        box-shadow: 2px 3px 0px #0d1128;
+      }
+    
+      .banner-btn::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 2rem;
+        width: 0%;
+        height: 100%;
+        transition: all 0.3s;
+      }
+    
+      .banner-btn::before {
+        background-color: #ff8b42;
+        z-index: -20;
+      }
+    
+      .banner-btn:hover::before {
+        width: 100%;
+        border-radius: 22px;
+      }
+}
