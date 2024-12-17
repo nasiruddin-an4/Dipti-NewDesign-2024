@@ -365,3 +365,76 @@ const logoConfig = {
 
 
 
+const teamMembers = [
+    {
+        name: "John Doe",
+        role: "CEO",
+        image: "/images/mentors/1.jpg",
+        social: {
+            twitter: "#",
+            linkedin: "#",
+            dribbble: "#"
+        },
+        href: "https://prium.github.io/elixir/",
+    },
+    {
+        name: "Jane Smith",
+        role: "CTO",
+        image: "/images/mentors/2.jpg", 
+        social: {
+            twitter: "#",
+            linkedin: "#",
+            dribbble: "#"
+        },
+        href: "#",
+    },
+    {
+        name: "Mike Johnson",
+        role: "Design Lead",
+        image: "/images/mentors/3.jpg",
+        social: {
+            twitter: "#",
+            linkedin: "#", 
+            dribbble: "#"
+        },
+        href: "#",
+    },
+    {
+        name: "Emily Brown",
+        role: "Product Manager",
+        image: "/images/mentors/4.jpg",
+        social: {
+            twitter: "#",
+            linkedin: "#",
+            dribbble: "#"
+        },
+        href: "#",
+    },
+    // Add more team members as needed
+];
+
+
+// data.js
+const blogPosts = [
+    {
+        image: 'images/b1.avif',
+        date: '2023-03-13',
+        title: 'Blog Title 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores...',
+        link: '#'
+    },
+    {
+        image: 'images/b2.jpg',
+        date: '2023-03-13',
+        title: 'Blog Title 2',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores...',
+        link: '#'
+    },
+    {
+        image: 'images/b3.jpg',
+        date: '2023-03-13',
+        title: 'Blog Title 3',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores...',
+        link: '#'
+    }
+];

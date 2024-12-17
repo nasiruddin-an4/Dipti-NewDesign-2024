@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}", 
+    "./*.{html,js}",
+],
   theme: {
     extend: {
       maxWidth: {
@@ -29,7 +32,7 @@ module.exports = {
         "secondary-dark-blue": "#0D1128",
         "tertiary-orange": "#EE6A23",
         "tertiary-sky": "#1294DF",
-        "light-orange": "#FF8B42",
+        "light-orange": "#ff8b42",
         "gray-1": "#686868",
         "gray-2": "#7A7A7A",
         "gray-3": "#333333",
@@ -172,6 +175,7 @@ module.exports = {
       boxShadow: {
         btn: "2px 3px 0px #0D1128;",
         category: "1px 1px 20px #71CBFF40",
+        customShadow:"0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);"
       },
       borderRadius: {
         11: "11px",

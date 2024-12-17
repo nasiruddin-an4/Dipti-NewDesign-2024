@@ -130,7 +130,7 @@ function initializeCoursePage() {
         });
     });
 
-    
+
 }
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', initializeCoursePage);
@@ -151,13 +151,94 @@ function createOfferCard(offer) {
 // Function to render "We Are Offering" section
 function renderOffers() {
     const offerContainer = document.getElementById('offerContainer');
-    offerContainer.innerHTML = offers.map(createOfferCard).join(''); 
+    offerContainer.innerHTML = offers.map(createOfferCard).join('');
 }
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses();
-    renderOffers();  
+    renderOffers();
 });
 
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    function createTeamMemberCard(member) {
+        return `
+        <a href="${member.href}" target="_blank">
+            <div class="mr-4 w-[200px] rounded-lg overflow-hidden">
+                <!-- Image Section with Relative Position -->
+                <div class="relative">
+                    <!-- Image -->
+                    <img src="${member.image}" alt="${member.name}" class="w-[200px] h-[250px] object-cover hover:scale-110 hover:rotate-3 transition-all duration-500" >
+                    <!-- Content Section - Absolute positioned with better visibility -->
+                    <div class="absolute bottom-2 left-0 right-0 text-center z-10 bg-white/80 backdrop-blur-sm p-3 mx-2 rounded-lg">
+                        <h3 class="text-xl font-bold text-gray-800">${member.name}</h3>
+                        <p class="text-gray-600 text-sm">${member.role}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        `;
+    }
+
+    function setupMarquee() {
+        const marqueeTrack = document.getElementById('teamMarquee');
+
+        // Clear existing content
+        marqueeTrack.innerHTML = '';
+
+        // Duplicate cards multiple times to ensure infinite loop
+        for (let i = 0; i < 4; i++) {
+            teamMembers.forEach(member => {
+                marqueeTrack.innerHTML += createTeamMemberCard(member);
+            });
+        }
+    }
+
+    // Initialize marquee
+    setupMarquee();
+});
+
+
+
+// card.js
+document.addEventListener('DOMContentLoaded', () => {
+    const blogContainer = document.querySelector('#blog-container'); // Target container
+
+    // Dynamically create blog cards
+    blogPosts.forEach((post) => {
+        const blogCard = document.createElement('a');
+        blogCard.href = post.link;
+        blogCard.className = 'group block transform transition-all duration-500 hover:scale-[1.02] rounded-2xl';
+
+        blogCard.innerHTML = `
+            <div class="w-full bg-white border rounded-2xl overflow-hidden shadow-sm">
+                <!-- Image Section -->
+                <div class="overflow-hidden">
+                    <img src="${post.image}" alt="${post.title}" 
+                         class="h-48 w-full object-cover rounded-t-2xl transform transition-transform duration-500 group-hover:rotate-3 group-hover:scale-110">
+                </div>
+
+                <!-- Content Section -->
+                <div class="p-6">
+                    <time datetime="${post.date}" class="text-xs uppercase text-gray-400 font-semibold">
+                        ${post.date}
+                    </time>
+                    <h2 class="my-2 text-2xl font-bold leading-relaxed text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+                        ${post.title}
+                    </h2>
+                    <p class="text-sm text-gray-600 mb-4">
+                        ${post.description}
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-indigo-600 group-hover:text-orange-500 transition-all duration-300">
+                        <span>See Details</span>
+                        <i class="ri-arrow-right-line text-lg transform transition-transform duration-300 group-hover:translate-x-2"></i>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        blogContainer.appendChild(blogCard);
+    });
+});
