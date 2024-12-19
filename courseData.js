@@ -296,58 +296,58 @@ const offers = [
 ];
 
 const clientLogos = [
-    { 
-        name: 'Udemy', 
+    {
+        name: 'Udemy',
         logo: './images/clients/cdc.png',
         url: 'https://www.udemy.com'
     },
-    { 
-        name: 'Coursera', 
+    {
+        name: 'Coursera',
         logo: './images/clients/embassy-usa.png',
         url: 'https://www.coursera.org'
     },
-    { 
-        name: 'edX', 
+    {
+        name: 'edX',
         logo: './images/clients/ict.png',
         url: 'https://www.edx.org'
     },
-    { 
-        name: 'Pluralsight', 
+    {
+        name: 'Pluralsight',
         logo: './images/clients/skilljobs.png',
         url: 'https://www.pluralsight.com'
     },
-    { 
-        name: 'LinkedIn Learning', 
+    {
+        name: 'LinkedIn Learning',
         logo: './images/clients/cdc.png',
         url: 'https://www.linkedin.com/learning'
     },
-    { 
-        name: 'Udacity', 
+    {
+        name: 'Udacity',
         logo: './images/clients/who.png',
         url: 'https://www.udacity.com'
     },
-    { 
-        name: 'Udacity', 
+    {
+        name: 'Udacity',
         logo: './images/clients/cdc.png',
         url: 'https://www.udacity.com'
     },
-    { 
-        name: 'Udacity', 
+    {
+        name: 'Udacity',
         logo: './images/clients/who.png',
         url: 'https://www.udacity.com'
     },
-    { 
-        name: 'Udacity', 
+    {
+        name: 'Udacity',
         logo: './images/clients/skilljobs.png',
         url: 'https://www.udacity.com'
     },
-    { 
-        name: 'Udacity', 
+    {
+        name: 'Udacity',
         logo: './images/clients/who.png',
         url: 'https://www.udacity.com'
     },
-    { 
-        name: 'Udacity', 
+    {
+        name: 'Udacity',
         logo: './images/clients/skilljobs.png',
         url: 'https://www.udacity.com'
     },
@@ -380,7 +380,7 @@ const teamMembers = [
     {
         name: "Jane Smith",
         role: "CTO",
-        image: "/images/mentors/2.jpg", 
+        image: "/images/mentors/2.jpg",
         social: {
             twitter: "#",
             linkedin: "#",
@@ -394,7 +394,7 @@ const teamMembers = [
         image: "/images/mentors/3.jpg",
         social: {
             twitter: "#",
-            linkedin: "#", 
+            linkedin: "#",
             dribbble: "#"
         },
         href: "#",
@@ -438,3 +438,68 @@ const blogPosts = [
         link: '#'
     }
 ];
+
+
+// CourseCategory Page Data Here
+
+const coursesCategory = [
+    {
+        id: 1,
+        title: 'ডিজিটাল মার্কেটিং',
+        category: 'digitalMarketing',
+        type: 'career',
+        hours: 591,
+        students: 824,
+        price: 87499,
+        originalPrice: 88000,
+        image: '/images/courses/1.jpg'
+    },
+    { 
+        id: 2, 
+        title: 'ফুল স্ট্যাক ওয়েব ডেভেলপমেন্ট', 
+        category: 'webDev', 
+        type: 'career', 
+        hours: 801, 
+        students: 1503, 
+        price: 84999, 
+        originalPrice: 85000, 
+        image: '/images/courses/2.jpg' 
+    },
+    { 
+        id: 3, 
+        title: 'Digital Marketing', 
+        category: 'digitalMarketing', 
+        type: 'career', 
+        hours: 801, 
+        students: 1503, 
+        price: 84999, 
+        originalPrice: 85000, 
+        image: '/images/courses/2.jpg' 
+    },
+    { 
+        id: 4, 
+        title: 'Video Editing', 
+        category: 'videoEditing', 
+        type: 'career', 
+        hours: 801, 
+        students: 1503, 
+        price: 84999, 
+        originalPrice: 85000, 
+        image: '/images/courses/2.jpg' 
+    },
+    { id: 5, title: 'Graphic Design', category: 'graphicDesign', type: 'career', hours: 450, students: 500, price: 40000, originalPrice: 45000, image: '/images/courses/3.jpg' },
+    { id: 6, title: 'এথিক্যাল হ্যাকিং', category: 'ethicalHacking', type: 'career', hours: 600, students: 1200, price: 95000, originalPrice: 100000, image: '/images/courses/4.jpg' },
+];
+
+// Reviews Data
+const reviews = [
+    { name: 'Rahul Ahmed', avatar: '/api/placeholder/40/40', stars: 5, feedback: 'Amazing course content! Now I\'m working as a freelancer.', course: 'Digital Marketing Course' },
+    { name: 'Tasnim Khan', avatar: '/api/placeholder/40/40', stars: 4.5, feedback: 'The MERN stack course was comprehensive and practical!', course: 'Full Stack Development' }
+];
+
+// FAQs Data
+const faqs = [
+    { question: 'What is the refund policy?', answer: 'You can request a refund within 14 days of purchase.' },
+    { question: 'How can I access the courses?', answer: 'Once purchased, you can access the courses through your account dashboard.' }
+];
+
