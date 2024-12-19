@@ -1006,6 +1006,10 @@ video {
   height: 340px;
 }
 
+.h-\[350px\]{
+  height: 350px;
+}
+
 .h-\[500px\]{
   height: 500px;
 }
@@ -1027,20 +1031,8 @@ video {
   height: 100%;
 }
 
-.h-\[350px\]{
-  height: 350px;
-}
-
-.h-3{
-  height: 0.75rem;
-}
-
 .max-h-548{
   max-height: 548px;
-}
-
-.max-h-\[350px\]{
-  max-height: 350px;
 }
 
 .max-h-full{
