@@ -7,7 +7,7 @@ function renderCourses() {
     courseGrid.innerHTML = coursesCategory
         .filter(course => selectedCategory === 'all' || course.category === selectedCategory)
         .map(course => `
-            <a href="#">
+            <a href="./singleCourse.html">
                 <div class="bg-white rounded-lg border p-4 h-[350px] flex flex-col">
                     <img src="${course.image}" alt="${course.title}" class="h-32 w-full mb-4 rounded-md object-cover">
                     <h3 class="text-xl font-bold">${course.title}</h3>
@@ -72,3 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('change', renderCourses); // Re-render courses based on category selection
     });
 });
+
+
+// Single Coursepage JS here
+

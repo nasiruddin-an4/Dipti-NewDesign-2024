@@ -503,3 +503,7 @@ const faqs = [
     { question: 'How can I access the courses?', answer: 'Once purchased, you can access the courses through your account dashboard.' }
 ];
 
+
+
+// Single course Data here
+
