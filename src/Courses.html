@@ -314,46 +314,49 @@
                 <!-- Sidebar Filters -->
                 <div class="w-full md:w-64 bg-white rounded-lg p-5 h-fit shadow-sm border">
                     <div>
-                        <h3 class="text-lg font-semibold mb-5"><i class="ri-filter-3-line mr-2"></i> Course Category</h3>
+                        <h3 class="text-lg font-semibold mb-5">
+                            <i class="ri-filter-3-line mr-2"></i> Course Category
+                        </h3>
                         <div class="space-y-5" id="categoryFilters">
-                            <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="radio" name="category" value="all" class="text-pink-600" checked>
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
+                                <input type="radio" name="category" value="all" class="text-pink-600">
                                 <span>All Categories</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="digitalMarketing" class="text-pink-600">
                                 <span>Digital Marketing</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="webDev" class="text-pink-600">
                                 <span>Software Development</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="graphicDesign" class="text-pink-600">
                                 <span>Graphic Design</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="videoEditing" class="text-pink-600">
                                 <span>Video Editing</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
                                 <span>Autodesk AutoCAD</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
                                 <span>CompTIA Network+</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
                                 <span>Android Apps Development</span>
                             </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
+                            <label class="flex items-center space-x-2 cursor-pointer category-label">
                                 <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
                                 <span>Hardware & Networking</span>
                             </label>
                         </div>
                     </div>
+                    
                 </div>
         
                 <!-- Course Grid -->
@@ -362,17 +365,6 @@
                 </div>
             </div>
         
-            <!-- Reviews Section -->
-            <div class="mt-20">
-                <h2 class="text-3xl font-bold text-center mb-12">Student Reviews</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="reviewGrid"></div>
-            </div>
-        
-            <!-- FAQs Section -->
-            <div class="mt-20">
-                <h2 class="text-3xl font-bold text-center mb-12">FAQs</h2>
-                <div class="space-y-4" id="faqSection"></div>
-            </div>
         </div>
     </section>
     

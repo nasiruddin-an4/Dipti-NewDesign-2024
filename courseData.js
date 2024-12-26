@@ -414,32 +414,6 @@ const teamMembers = [
 ];
 
 
-// data.js
-const blogPosts = [
-    {
-        image: 'images/b1.avif',
-        date: '2023-03-13',
-        title: 'Blog Title 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores...',
-        link: '#'
-    },
-    {
-        image: 'images/b2.jpg',
-        date: '2023-03-13',
-        title: 'Blog Title 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores...',
-        link: '#'
-    },
-    {
-        image: 'images/b3.jpg',
-        date: '2023-03-13',
-        title: 'Blog Title 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores...',
-        link: '#'
-    }
-];
-
-
 // CourseCategory Page Data Here
 
 const coursesCategory = [

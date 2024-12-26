@@ -30,46 +30,34 @@ function renderCourses() {
         `).join('');
 }
 
-// Render Reviews
-function renderReviews() {
-    const reviewGrid = document.getElementById('reviewGrid');
-    reviewGrid.innerHTML = reviews.map(review => `
-        <div class="bg-white rounded-lg shadow-md p-6">
-            <div class="flex items-center mb-4">
-                <img src="${review.avatar}" alt="${review.name}" class="w-12 h-12 rounded-full">
-                <div class="ml-4">
-                    <h4 class="font-semibold">${review.name}</h4>
-                    <div class="flex text-yellow-400">
-                        ${'★'.repeat(Math.floor(review.stars))}
-                        ${review.stars % 1 ? '☆' : ''}
-                    </div>
-                </div>
-            </div>
-            <p>${review.feedback}</p>
-        </div>
-    `).join('');
-}
 
-// Render FAQs
-function renderFAQs() {
-    const faqSection = document.getElementById('faqSection');
-    faqSection.innerHTML = faqs.map(faq => `
-        <div class="p-4 bg-white rounded-lg shadow-md">
-            <h3 class="font-bold text-lg">${faq.question}</h3>
-            <p class="mt-2">${faq.answer}</p>
-        </div>
-    `).join('');
-}
+
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    renderCourses();
-    renderReviews();
-    renderFAQs();
 
     // Add event listeners to update courses when category changes
     document.querySelectorAll('input[name="category"]').forEach(input => {
         input.addEventListener('change', renderCourses); // Re-render courses based on category selection
+    });
+});
+
+
+// Select all radio buttons and their corresponding labels
+const radioButtons = document.querySelectorAll('input[type="radio"][name="category"]');
+const labels = document.querySelectorAll('.category-label');
+
+// Add event listeners to radio buttons
+radioButtons.forEach(radioButton => {
+    radioButton.addEventListener('change', () => {
+        // Remove the active class from all labels
+        labels.forEach(label => {
+            label.classList.remove('font-bold', 'text-blue-600');
+        });
+
+        // Add the active class to the selected label
+        const selectedLabel = radioButton.closest('label');
+        selectedLabel.classList.add('font-bold', 'text-blue-600');
     });
 });
 
