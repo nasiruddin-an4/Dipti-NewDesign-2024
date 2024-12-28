@@ -307,65 +307,115 @@
     <!-- Navbar Start  End -->
 
 
-    <section class="mt-10 lg:mt-20">
-        <div class="max-w-6xl mx-auto px-4 lg:px-0">
-            <!-- Course Section -->
-            <div class="flex flex-col md:flex-row gap-6">
-                <!-- Sidebar Filters -->
-                <div class="w-full md:w-64 bg-white rounded-lg p-5 h-fit shadow-sm border">
-                    <div>
-                        <h3 class="text-lg font-semibold mb-5">
-                            <i class="ri-filter-3-line mr-2"></i> Course Category
-                        </h3>
-                        <div class="space-y-5" id="categoryFilters">
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="all" class="text-pink-600" checked>
-                                <span>All Categories</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="digitalMarketing" class="text-pink-600">
-                                <span>Digital Marketing</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="webDev" class="text-pink-600">
-                                <span>Software Development</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="graphicDesign" class="text-pink-600">
-                                <span>Graphic Design</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="videoEditing" class="text-pink-600">
-                                <span>Video Editing</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>Autodesk AutoCAD</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>CompTIA Network+</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>Android Apps Development</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>Hardware & Networking</span>
-                            </label>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 lg:px-0 py-16">
+        <!-- Title Section -->
+        <div class="text-center mb-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Terms & Policies</h1>
+            <p class="max-w-2xl mx-auto">Everything you need to know about using our services</p>
+        </div>
+    
+        <!-- Layout -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Table of Contents -->
+            <aside class="lg:w-1/4 bg-white rounded-lg shadow-sm p-6 sticky top-16 h-fit">
+                <h2 class="text-lg font-bold text-gray-900 mb-6">Table of Contents</h2>
+                <nav class="space-y-4">
+                    <a href="#terms" class="block text-gray-700 hover:text-blue-600 transition-colors">
+                        ➤ Terms of Service
+                    </a>
+                    <a href="#privacy" class="block text-gray-700 hover:text-green-600 transition-colors">
+                        ➤ Privacy Policy
+                    </a>
+                    <a href="#cookies" class="block text-gray-700 hover:text-purple-600 transition-colors">
+                        ➤ Cookie Policy
+                    </a>
+                    <a href="#contact" class="block text-gray-700 hover:text-indigo-600 transition-colors">
+                        ➤ Contact Us
+                    </a>
+                </nav>
+            </aside>
+    
+            <!-- Main Content -->
+            <section class="lg:w-3/4 space-y-16">
+                <!-- Terms Section -->
+                <section id="terms" class="scroll-mt-20">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Terms of Service</h2>
+                    <div class="space-y-8">
+                        <div class="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Account Terms</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mr-4">✓</span>
+                                    <span class="text-gray-600">You must be 13 years or older to use this service</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mr-4">✓</span>
+                                    <span class="text-gray-600">Provide accurate personal information during registration</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mr-4">✓</span>
+                                    <span class="text-gray-600">Maintain the security of your account credentials</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
+                </section>
     
-                <!-- Course Grid -->
-                <div class="flex-1">
-                    <div id="courseGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-                </div>
-            </div>
+                <!-- Privacy Section -->
+                <section id="privacy" class="scroll-mt-20">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Privacy Policy</h2>
+                    <div class="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-6">Information We Collect</h3>
+                                <ul class="space-y-4">
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-4"></span>
+                                        <span class="text-gray-600">Name and contact details</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-4"></span>
+                                        <span class="text-gray-600">Account credentials</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-4"></span>
+                                        <span class="text-gray-600">Payment information</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-6">How We Use It</h3>
+                                <ul class="space-y-4">
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="text-gray-600">Service improvement</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="text-gray-600">Communication</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-4"></span>
+                                        <span class="text-gray-600">Security measures</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- Cookie Section -->
+                <section id="cookies" class="scroll-mt-20">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Cookie Policy</h2>
+                    <div class="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                        <p class="text-gray-600">Cookies help improve the user experience...</p>
+                    </div>
+                </section>
+            </section>
         </div>
-    </section>
-
+    </main>
+    
 
 
     <!-- Footer Section -->

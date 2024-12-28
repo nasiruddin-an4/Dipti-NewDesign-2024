@@ -431,7 +431,7 @@
         </div>
     </section>
 
-        <!-- Instructor  -->
+    <!-- Instructor  -->
     <section>
         <div class="max-w-6xl mx-auto px-4 lg:px-0">
             <div class="pt-8 pb-2 bg-white md:max-w-[calc(100%_-_348px)] lg:max-w-[calc(100%_-_448px)] mb-8">
@@ -443,7 +443,7 @@
                     </div>
                     <div class="flex-1 ml-4 ">
                         <h3 class="text-lg font-semibold inline-block">
-                            <a class="flex items-center group hover:text-green-700 duration-300" href="#">
+                            <a class="flex items-center group hover:text-tertiary-orange duration-300" href="#">
                                 Musfiqur Rahman
                                 <i
                                     class="ri-arrow-right-s-line ml-2 mt-1 transition-transform duration-300 group-hover:translate-x-2"></i>
@@ -529,16 +529,16 @@
 
         </div>
     </section>
-
+    
+    <!-- Course Certificate and Rating Card -->
     <section>
-        <!-- Course Certificate and Rating Card -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0">
             <div class="lg:flex justify-between gap-4">
                 <!-- Certificate Section -->
                 <div class="rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100 mb-8 lg:mb-0 lg:flex-1">
                     <div class="flex items-center gap-2 mb-4 sm:mb-6">
-                        <i class="ri-medal-line text-xl sm:text-2xl text-blue-600"></i>
-                        <h2 class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                        <i class="ri-medal-line text-xl sm:text-2xl text-tertiary-orange"></i>
+                        <h2 class="text-xl sm:text-2xl font-bold text-tertiary-orange">
                             Your Certificate at a Glance
                         </h2>
                     </div>
@@ -558,8 +558,8 @@
                         <!-- Main Rating Card -->
                         <div class="rounded-xl p-4 sm:p-8 shadow-sm border border-gray-100 bg-gradient-to-br from-white to-blue-50">
                             <div class="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-8">
-                                <i class="ri-bard-fill text-xl sm:text-2xl text-blue-600"></i>
-                                <h2 class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                                <i class="ri-bard-fill text-xl sm:text-2xl text-tertiary-orange"></i>
+                                <h2 class="text-xl sm:text-2xl font-bold text-tertiary-orange">
                                     Average Rating
                                 </h2>
                             </div>
@@ -601,7 +601,7 @@
     
                         <!-- Course Stats Grid -->
                         <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-                            <div class="rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100 bg-white hover:shadow-lg transition-shadow group cursor-pointer text-center">
+                            <div class="rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100 bg-white hover:shadow-lg transition-shadow group cursor-pointer">
                                 <div class="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                                     <div class="p-2 sm:p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -880,98 +880,121 @@
     </div>
     <!-- FAQs Section END -->
 
-
-
-
-    <!-- Footer Section -->
-    <footer class="bg-gradient-to-br from-[#0c1633] to-[#0f1c3f] text-white pt-16 pb-8 mt-40">
-        <div class="max-w-6xl mx-auto px-4 lg:px-0">
-            <!-- Top Section -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                <!-- Company Info -->
-                <div class="space-y-6">
-                    <div class="flex items-center gap-2">
-                        <img src="/images/dipti-logo.png" alt="dipti-logo">
-                    </div>
-                    <p class="text-gray-400">
-                        We create digital experiences for brands and companies by using technology.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="ri-facebook-fill text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="ri-twitter-fill text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="ri-instagram-fill text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="ri-linkedin-fill text-xl"></i>
-                        </a>
+    <!-- Fixed Banner -->
+    <div id="courseBanner" class="fixed -bottom-28 left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex items-center justify-between">
+                <!-- Course Info (Left Side) -->
+                <div class="flex flex-col">
+                    <h2 id="courseTitle" class="text-xl font-bold text-primary-dark-blue">Advance Graphics Design</h2>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-2xl font-bold text-tertiary-orange">৳</span>
+                        <span id="coursePrice" class="text-2xl font-bold text-tertiary-orange">12,585</span>
                     </div>
                 </div>
 
-                <!-- About Us -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Testimonial</a></li>
-                    </ul>
-                </div>
+                <!-- Apply Button (Right Side) -->
+                <button id="applyButton"  class="bg-tertiary-orange text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 relative group">
+                Apply Now 
+                <i class="ri-arrow-right-line inline-block ml-2 transition-transform duration-200 group-hover:translate-x-2"></i>
+                </button>
 
-                <!-- Features -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Features</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">How it works</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Refund policy</a></li>
-                    </ul>
-                </div>
+            </div>
+        </div>
+    </div>
 
-                <!-- Latest Blog -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Latest blog</h3>
-                    <div class="space-y-4">
-                        <a href="#" class="flex gap-3 group">
-                            <img src="images/b2.jpg" alt="blog" class="w-20 object-cover rounded">
-                            <p class="text-sm text-gray-400 group-hover:text-white transition-colors">I think really
-                                important to design with...</p>
-                        </a>
-                        <a href="#" class="flex gap-3 group">
-                            <img src="images/b3.jpg" alt="blog" class="w-20 object-cover rounded">
-                            <p class="text-sm text-gray-400 group-hover:text-white transition-colors">Recognizing the
-                                need is the primary...</p>
-                        </a>
-                    </div>
+
+
+
+   <!-- Footer Section -->
+   <footer class="bg-gradient-to-br from-[#0c1633] to-[#0f1c3f] text-white pt-16 pb-8 mt-40">
+    <div class="max-w-6xl mx-auto px-4 lg:px-0">
+        <!-- Top Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-2">
+                    <img src="/images/dipti-logo.png" alt="dipti-logo">
+                </div>
+                <p class="text-gray-400">
+                    We create digital experiences for brands and companies by using technology.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="ri-facebook-fill text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="ri-twitter-fill text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="ri-instagram-fill text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="ri-linkedin-fill text-xl"></i>
+                    </a>
                 </div>
             </div>
 
-            <!-- Bottom Section -->
-            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-2 text-sm text-gray-400">
-                    <span>Develop for: </span><a href="#">Dipti</a>
-                </div>
+            <!-- About Us -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Testimonial</a></li>
+                </ul>
+            </div>
 
-                <div class="flex gap-6 text-sm">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Legal notice</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of service</a>
-                </div>
+            <!-- Features -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Features</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">How it works</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    </li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Refund policy</a></li>
+                </ul>
+            </div>
 
-                <div class="text-sm text-gray-400">
-                    Designed and Developed by Daffodil Web Team
+            <!-- Latest Blog -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Latest blog</h3>
+                <div class="space-y-4">
+                    <a href="#" class="flex gap-3 group">
+                        <img src="images/b2.jpg" alt="blog" class="w-20 object-cover rounded">
+                        <p class="text-sm text-gray-400 group-hover:text-white transition-colors">I think really
+                            important to design with...</p>
+                    </a>
+                    <a href="#" class="flex gap-3 group">
+                        <img src="images/b3.jpg" alt="blog" class="w-20 object-cover rounded">
+                        <p class="text-sm text-gray-400 group-hover:text-white transition-colors">Recognizing the
+                            need is the primary...</p>
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer Section End-->
+
+        <!-- Bottom Section -->
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-sm text-gray-400">
+                <span>Develop for: </span><a href="#">Dipti</a>
+            </div>
+
+            <div class="flex gap-6 text-sm">
+                <a href="term&policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Legal notice</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of service</a>
+            </div>
+
+            <div class="text-sm text-gray-400">
+                Designed and Developed by Daffodil Web Team
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End-->
 
 
 
@@ -992,6 +1015,38 @@
     <script src="/courseCard.js"></script>
     <script src="/courseData.js"></script>
     <script src="courseCategory.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+    const banner = document.getElementById('courseBanner');
+    const applyButton = document.getElementById('applyButton');
+    
+    // Banner position adjustment
+    function adjustBannerPosition() {
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        if (footerRect.top <= windowHeight) {
+            const footerVisibleHeight = windowHeight - footerRect.top;
+            banner.style.bottom = `${footerVisibleHeight}px`;
+        } else {
+            banner.style.bottom = '0';
+        }
+    }
+
+    // Apply button click handler
+    applyButton.addEventListener('click', function() {
+        window.location.href = 'payment.html';
+    });
+
+    // Event listeners for scroll and resize
+    window.addEventListener('scroll', adjustBannerPosition);
+    window.addEventListener('resize', adjustBannerPosition);
+    
+    // Initial position adjustment
+    adjustBannerPosition();
+});
+    </script>
 </body>
 
 </html>

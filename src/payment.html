@@ -307,64 +307,108 @@
     <!-- Navbar Start  End -->
 
 
-    <section class="mt-10 lg:mt-20">
-        <div class="max-w-6xl mx-auto px-4 lg:px-0">
-            <!-- Course Section -->
-            <div class="flex flex-col md:flex-row gap-6">
-                <!-- Sidebar Filters -->
-                <div class="w-full md:w-64 bg-white rounded-lg p-5 h-fit shadow-sm border">
-                    <div>
-                        <h3 class="text-lg font-semibold mb-5">
-                            <i class="ri-filter-3-line mr-2"></i> Course Category
-                        </h3>
-                        <div class="space-y-5" id="categoryFilters">
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="all" class="text-pink-600" checked>
-                                <span>All Categories</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="digitalMarketing" class="text-pink-600">
-                                <span>Digital Marketing</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="webDev" class="text-pink-600">
-                                <span>Software Development</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="graphicDesign" class="text-pink-600">
-                                <span>Graphic Design</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="videoEditing" class="text-pink-600">
-                                <span>Video Editing</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>Autodesk AutoCAD</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>CompTIA Network+</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>Android Apps Development</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer category-label">
-                                <input type="radio" name="category" value="ethicalHacking" class="text-pink-600">
-                                <span>Hardware & Networking</span>
-                            </label>
+
+    <section>
+        <div class="max-w-6xl mx-auto mt-10 bg-white border p-6 rounded-xl">
+            <!-- Course Title Section -->
+            <h2 class="text-xl font-bold mb-8 border-b py-3">কমপ্লিট পেমেন্ট</h2>
+            <div class="flex flex-col md:flex-row gap-5">
+                <!-- Left Section -->
+                <div class="bg-white md:w-3/5">
+                    <!-- Course Details Card -->
+                    <div class="bg-white rounded-md shadow-md border p-4 mb-8">
+                        <div class="flex flex-col sm:flex-row items-start gap-6">
+                            <img src="/images/courses/3.jpg" alt="SQA Course" class="w-full sm:w-48 h-32 object-cover rounded-lg">
+                            <div class="flex-1">
+                                <h2 class="text-xl font-bold mb-4">SQA: Manual & Automated Testing</h2>
+        
+                                <!-- Course Price Details -->
+                                <div class="space-y-2">
+                                    <div class="flex justify-between items-center">
+                                        <span>কোর্সের মূল্য</span>
+                                        <span>৳ ৭,০০০</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-gray-600">
+                                        <span>ডিসকাউন্ট (প্রোমো কোড)</span>
+                                        <span>- ৳ ০</span>
+                                    </div>
+                                    <div class="flex justify-between items-center font-bold pt-2 border-t">
+                                        <span>টোটাল পেমেন্ট:</span>
+                                        <span>৳ ৭,০০০</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Contact Information -->
+                    <div class="mt-6 text-center text-gray-600">
+                        <p>প্রয়োজনে কল করুন +8801940444429 (সকাল ১০টা থেকে রাত ১০টা)</p>
+                    </div>
                 </div>
-    
-                <!-- Course Grid -->
-                <div class="flex-1">
-                    <div id="courseGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        
+                <!-- Right Section -->
+                <div class="bg-white shadow-2xl p-6 w-full md:w-2/5">
+                    <!-- Payment Methods Section -->
+                    <h3 class="text-lg font-semibold mb-6">পেমেন্টের মাধ্যম</h3>
+        
+                    <!-- Payment Options -->
+                    <div class="space-y-4 ">
+                        <!-- bKash Option -->
+                        <label class="block p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="payment" class="w-4 h-4 text-blue-600" checked>
+                                <img src="/images/Paayment/bkash-payment.png" alt="bKash" class="h-8">
+                            </div>
+                        </label>
+        
+                        <!-- Nagad/Card Option -->
+                        <label class="block p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="payment" class="w-4 h-4 text-blue-600">
+                                <div class="flex gap-2">
+                                    <img src="/images/Paayment/nagad.png" alt="Nagad" class="h-8">
+                                    <img src="/images/rocket.png" alt="Rocket" class="h-8">
+                                    <img src="/images/Paayment/mastercard.png" alt="Mastercard" class="h-8">
+                                    <img src="/images/Paayment/visa.png" alt="Visa" class="h-8">
+                                </div>
+                            </div>
+                        </label>
+        
+                        <!-- International Payment Option -->
+                        <label class="block p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="payment" class="w-4 h-4 text-blue-600">
+                                <div class="flex items-center gap-2">
+                                    <img src="/images/Paayment/2024-04-23T05-10-45.011Z-global-line.svg" alt="International" class="h-8">
+                                    <span>Pay Internationally (Card)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+        
+                    <!-- Total and Submit Button -->
+                    <div class="mt-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="font-semibold">টোটাল পেমেন্ট:</span>
+                            <span class="font-bold text-xl">৳ ৭,০০০</span>
+                        </div>
+                        <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-lg">
+                            পেমেন্ট সম্পন্ন করি
+                        </button>
+                        <p class="text-center text-sm text-gray-500 mt-4">
+                            <span class="inline-block mr-1">🔒</span>
+                            নিরাপদ পেমেন্ট
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+
+
+
+
 
 
 
@@ -457,6 +501,9 @@
         </div>
     </footer>
     <!-- Footer Section End-->
+
+
+
 
 
 
