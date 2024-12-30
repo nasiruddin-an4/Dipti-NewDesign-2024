@@ -214,3 +214,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+//Counter for all page
+
+function animation() {
+    return {
+      counter: 0,
+      animate(finalCount) {
+        let time = 2000 /* Time in milliseconds */
+        let interval = 9
+        let step = Math.floor(finalCount*interval/time)
+        let timer = setInterval(() => {
+          this.counter = this.counter + step;
+          if (this.counter >= finalCount + step) {
+            this.counter = finalCount
+            clearInterval(timer);
+            timer = null;
+            return;
+          }
+        }, interval);
+      }
+    };
+  }
