@@ -395,6 +395,35 @@
     </section>
     <!-- Navbar Start  End -->
 
+    <!-- Breadcrumb Navigation -->
+    <div class="bg-black">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4 lg:px-0">
+            <div class="flex flex-col items-center md:items-start gap-2 md:w-[50%]">
+                <div class="flex items-center gap-2 py-5">
+                    <a href="/">
+                        <p class=" text-white hover:text-[#9CA3AF]"> Home </p>
+                    </a>
+                    <i class="ri-arrow-right-s-line text-white"></i>
+                    <p class="text-gray-400">CSR</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start pb-5 lg:pb-0">
+                    <h2 class="text-3xl font-bold text-white">CSR</h2>
+                    <p class="text-gray-300 text-sm mt-4 text-center md:text-start">
+                        Our commitment to environmental sustainability, social responsibility, and ethical business
+                        practices shapes everything we do. We believe in making a positive impact through sustainable
+                        practices.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="hidden md:block">
+                    <img src="/images/Breadcrumb Navigation 2.png" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Navigation -->
+
 
     <!-- Carousel Section -->
     <section>
@@ -440,7 +469,33 @@
                     <img src="/images/about-bg.jpg" alt="Global Responsibility"
                         class="w-full h-[300px] sm:h-[400px] md:h-full object-cover" />
                 </div>
+
+                <!-- Navigation -->
+                <div class="absolute inset-0 flex items-center justify-between px-4">
+                    <!-- Previous Button -->
+                    <button @click="activeSlide = activeSlide === 1 ? 3 : activeSlide - 1"
+                        class="bg-black/50 text-white px-1 rounded-full hover:bg-black/70 transition">
+                        <i class="ri-arrow-left-s-line text-2xl"></i>
+                    </button>
+
+                    <!-- Next Button -->
+                    <button @click="activeSlide = activeSlide === 3 ? 1 : activeSlide + 1"
+                        class="bg-black/50 text-white px-1 rounded-full hover:bg-black/70 transition">
+                        <i class="ri-arrow-right-s-line text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Dots Navigation -->
+                <!-- <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    <button @click="activeSlide = 1" :class="{ 'bg-white': activeSlide === 1 }"
+                        class="w-3 h-3 rounded-full bg-gray-400"></button>
+                    <button @click="activeSlide = 2" :class="{ 'bg-white': activeSlide === 2 }"
+                        class="w-3 h-3 rounded-full bg-gray-400"></button>
+                    <button @click="activeSlide = 3" :class="{ 'bg-white': activeSlide === 3 }"
+                        class="w-3 h-3 rounded-full bg-gray-400"></button>
+                </div> -->
             </div>
+
         </div>
     </section>
     <!-- Carousel Section END -->
@@ -454,7 +509,8 @@
                         Our Key Initiatives
                     </h2>
                     <p class="text-lg md:text-xl lg:text-2xl text-blue-100 mb-10 leading-relaxed">
-                        Driving meaningful change through focused initiatives that create lasting impact in our communities and environment.
+                        Driving meaningful change through focused initiatives that create lasting impact in our
+                        communities and environment.
                     </p>
                     <div class="space-x-4 flex justify-center mb-10">
                         <a href="#initiatives"
@@ -471,47 +527,60 @@
                 <!-- Grid of cards, responsive layout -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
                     <!-- Environmental Card -->
-                    <div class="group bg-primary-dark-blue rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between h-full">
+                    <div
+                        class="group bg-primary-dark-blue rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between h-full">
                         <div>
-                            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors duration-300 overflow-hidden">
-                                <img src="/images/icons/10.png" alt="Environmental Icon" class="w-16 h-16 object-cover" />
+                            <div
+                                class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors duration-300 overflow-hidden">
+                                <img src="/images/icons/10.png" alt="Environmental Icon"
+                                    class="w-16 h-16 object-cover" />
                             </div>
                             <h3 class="text-2xl font-bold mb-4 text-gray-300">Environmental Sustainability</h3>
-                            <p class="text-gray-500 mb-6 leading-relaxed">Training for Youths” a special scholarship project for the unprivileged/unemployed youths of the country.</p>
+                            <p class="text-gray-500 mb-6 leading-relaxed">Training for Youths” a special scholarship
+                                project for the unprivileged/unemployed youths of the country.</p>
                         </div>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-white font-bold text-lg">50% emissions reduction</span>
-                            <span class="text-white group-hover:translate-x-2 transform transition-transform duration-300">→</span>
+                            <span
+                                class="text-white group-hover:translate-x-2 transform transition-transform duration-300">→</span>
                         </div>
                     </div>
 
                     <!-- Social Card -->
-                    <div class="group bg-primary-dark-blue rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between h-full">
+                    <div
+                        class="group bg-primary-dark-blue rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between h-full">
                         <div>
-                            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300 overflow-hidden">
+                            <div
+                                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300 overflow-hidden">
                                 <img src="/images/icons/7.jpg" alt="Community Icon" class="w-16 h-16 object-cover" />
                             </div>
                             <h3 class="text-2xl font-bold mb-4 text-gray-300">Fund Rising Program</h3>
-                            <p class="text-gray-400 mb-6 leading-relaxed">Empowering communities through education, economic development, and sustainable growth initiatives.</p>
+                            <p class="text-gray-400 mb-6 leading-relaxed">Empowering communities through education,
+                                economic development, and sustainable growth initiatives.</p>
                         </div>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-white font-bold text-lg">10,000+ lives impacted</span>
-                            <span class="text-white group-hover:translate-x-2 transform transition-transform duration-300">→</span>
+                            <span
+                                class="text-white group-hover:translate-x-2 transform transition-transform duration-300">→</span>
                         </div>
                     </div>
 
                     <!-- Governance Card -->
-                    <div class="group bg-primary-dark-blue rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between h-full">
+                    <div
+                        class="group bg-primary-dark-blue rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between h-full">
                         <div>
-                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors duration-300 overflow-hidden">
+                            <div
+                                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors duration-300 overflow-hidden">
                                 <img src="/images/icons/8.png" alt="Governance Icon" class="w-16 h-16 object-cover" />
                             </div>
                             <h3 class="text-2xl font-bold mb-4 text-gray-300">Ethical Leadership</h3>
-                            <p class="text-gray-400 mb-6 leading-relaxed">Setting the standard for corporate governance and ethical business practices in our industry.</p>
+                            <p class="text-gray-400 mb-6 leading-relaxed">Setting the standard for corporate governance
+                                and ethical business practices in our industry.</p>
                         </div>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-white font-bold text-lg">100% compliance rate</span>
-                            <span class="text-white group-hover:translate-x-2 transform transition-transform duration-300">→</span>
+                            <span
+                                class="text-white group-hover:translate-x-2 transform transition-transform duration-300">→</span>
                         </div>
                     </div>
                 </div>
@@ -532,25 +601,29 @@
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                     <p class="mt-6 text-gray-600 text-lg">Stay informed with our latest findings and initiatives</p>
                 </div>
-    
+
                 <!-- Reports Grid -->
                 <div class="space-y-8">
                     <!-- Report Card 1 -->
-                    <a href="#" class="group block bg-white rounded-xl p-8 border hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                    <a href="#"
+                        class="group block bg-white rounded-xl p-8 border hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                         <div class="flex flex-col md:flex-row md:items-center gap-6">
                             <!-- Icon -->
                             <div class="flex-shrink-0">
-                                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
-                                    <i class="ri-file-chart-line text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                                <div
+                                    class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
+                                    <i
+                                        class="ri-file-chart-line text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
                                 </div>
                             </div>
-                            
+
                             <!-- Content -->
                             <div class="flex-grow">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                                     <div>
                                         <h3 class="text-xl font-bold text-gray-900 mb-2">2023 Sustainability Report</h3>
-                                        <p class="text-gray-600">Comprehensive review of our environmental and social impact initiatives</p>
+                                        <p class="text-gray-600">Comprehensive review of our environmental and social
+                                            impact initiatives</p>
                                         <div class="mt-3 flex items-center gap-4">
                                             <span class="text-sm text-gray-500 flex items-center">
                                                 <i class="ri-calendar-line mr-1"></i>
@@ -563,7 +636,8 @@
                                         </div>
                                     </div>
                                     <div class="flex-shrink-0">
-                                        <span class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-6 py-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                                        <span
+                                            class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-6 py-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                                             <span>Download</span>
                                             <i class="ri-download-2-line"></i>
                                         </span>
@@ -572,23 +646,28 @@
                             </div>
                         </div>
                     </a>
-    
+
                     <!-- Report Card 2 -->
-                    <a href="#" class="group block bg-white rounded-xl p-8 border hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                    <a href="#"
+                        class="group block bg-white rounded-xl p-8 border hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                         <div class="flex flex-col md:flex-row md:items-center gap-6">
                             <!-- Icon -->
                             <div class="flex-shrink-0">
-                                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center group-hover:bg-green-600 transition-colors duration-300">
-                                    <i class="ri-team-line text-3xl text-green-600 group-hover:text-white transition-colors duration-300"></i>
+                                <div
+                                    class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center group-hover:bg-green-600 transition-colors duration-300">
+                                    <i
+                                        class="ri-team-line text-3xl text-green-600 group-hover:text-white transition-colors duration-300"></i>
                                 </div>
                             </div>
-                            
+
                             <!-- Content -->
                             <div class="flex-grow">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                                     <div>
-                                        <h3 class="text-xl font-bold text-gray-900 mb-2">Q4 2023 Community Impact Report</h3>
-                                        <p class="text-gray-600">Latest updates on our community engagement initiatives</p>
+                                        <h3 class="text-xl font-bold text-gray-900 mb-2">Q4 2023 Community Impact Report
+                                        </h3>
+                                        <p class="text-gray-600">Latest updates on our community engagement initiatives
+                                        </p>
                                         <div class="mt-3 flex items-center gap-4">
                                             <span class="text-sm text-gray-500 flex items-center">
                                                 <i class="ri-calendar-line mr-1"></i>
@@ -601,7 +680,8 @@
                                         </div>
                                     </div>
                                     <div class="flex-shrink-0">
-                                        <span class="inline-flex items-center gap-2 bg-green-100 text-green-600 px-6 py-3 rounded-full group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+                                        <span
+                                            class="inline-flex items-center gap-2 bg-green-100 text-green-600 px-6 py-3 rounded-full group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
                                             <span>Download</span>
                                             <i class="ri-download-2-line"></i>
                                         </span>
@@ -619,9 +699,15 @@
     <!-- Impact Report with improved stats -->
     <section>
         <div class="max-w-6xl mx-auto mt-20 px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Impact</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+        
             <div class="antialiased text-gray-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <!-- Videos -->
-                <div class="text-center">
+                <div class="text-center bg-yellow-200 py-5">
                     <div class="flex gap-1 justify-center">
                         <h2 class="text-4xl font-bold text-blue-900" x-data="animation()" x-init="animate(400)"
                             x-text="counter">
@@ -629,11 +715,11 @@
                         </h2>
                         <span class="text-4xl font-bold text-blue-900">+</span>
                     </div>
-                    <p class="text-lg">Subscribers</p>
+                    <p class="text-lg">Videos</p>
                 </div>
 
                 <!-- Subscribers -->
-                <div class="text-center">
+                <div class="text-center bg-indigo-300 py-5">
                     <div class="flex gap-1 justify-center">
                         <h2 class="text-4xl font-bold text-blue-900" x-data="animation()" x-init="animate(9400)"
                             x-text="counter">
@@ -645,7 +731,7 @@
                 </div>
 
                 <!-- Likes -->
-                <div class="text-center">
+                <div class="text-center bg-blue-400 py-5">
                     <div class="flex gap-1 justify-center">
                         <h2 class="text-4xl font-bold text-blue-900" x-data="animation()" x-init="animate(11024)"
                             x-text="counter">
@@ -656,8 +742,8 @@
                     <p class="text-lg">Likes</p>
                 </div>
 
-                <!-- Likes -->
-                <div class="text-center">
+                <!-- Views -->
+                <div class="text-center bg-violet-400 py-5">
                     <div class="flex gap-1 justify-center">
                         <h2 class="text-4xl font-bold text-blue-900" x-data="animation()" x-init="animate(11024)"
                             x-text="counter">
@@ -665,24 +751,12 @@
                         </h2>
                         <span class="text-4xl font-bold text-blue-900">+</span>
                     </div>
-                    <p class="text-lg">Likes</p>
+                    <p class="text-lg">Views</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Impact Report with improved stats -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
