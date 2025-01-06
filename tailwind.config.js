@@ -55,7 +55,7 @@ module.exports = {
         "light-orange": "rgba( 255, 89, 0, 0.27)",
         "lighter-sky": "rgba(18, 148, 223, 0.21)",
         "banner-dark": "#0A0E20",
-        lighter: "#ECECEC",
+        'gray-1': 'rgb(249 250 251 / <alpha-value>)',
       },
       width: {
         "9p": "9px",
@@ -131,11 +131,10 @@ module.exports = {
         141: "141px",
       },
       spacing: {
-        p7: "7px",
         11: "11px",
         13: "13px",
         17: "17px",
-        18: "18px",
+        19: "78px",
         21: "21px",
         22: "22px",
         25: "25px",

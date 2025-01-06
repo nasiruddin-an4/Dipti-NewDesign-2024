@@ -308,3 +308,14 @@
 */
 
 
+.line-animation {
+  stroke-dasharray: 1; /* Full path length */
+  stroke-dashoffset: 1; /* Start hidden */
+  animation: draw-line 2s ease-in-out forwards;
+}
+
+@keyframes draw-line {
+  to {
+      stroke-dashoffset: 0; /* Fully visible */
+  }
+}
