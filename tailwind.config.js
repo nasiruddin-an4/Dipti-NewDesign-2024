@@ -185,12 +185,14 @@ module.exports = {
         customShadow:"0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);"
       },
       borderRadius: {
-        11: "11px",
+        10: "10px",
+        15: "15px",
         17: "17px",
         18: "18px",
         20: "20px",
         22: "22px",
         23: "23px",
+        30: "30px",
         116: "116px",
         213: "231px",
         452: "452px",
